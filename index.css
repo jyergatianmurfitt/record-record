@@ -1,0 +1,91 @@
+ input[type='submit'], button, [aria-label]{
+   cursor: pointer;
+ }
+
+ #edit-box{
+   display: none;
+ }
+
+ .title {
+   background-image: url(img3.jpg);
+   background-size: cover;
+   background-position: center;
+   padding-top: 2%;
+   padding-bottom: 2%;
+ }
+
+ .recordsTable #edit-box{
+   margin-top: 0px;
+   padding-top: 0px;
+   padding-left: 0px;
+   margin-left: 0px;
+ }
+
+h1, h2 {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 14px;
+  color: white;
+  background-color: black;
+  width: 20%;
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.input {
+  width: 80%;
+  display: block;
+  margin: auto;
+  font-family: sans-serif;
+  margin-top: 2%;
+}
+
+.recordItem {
+  width: 81%;
+  padding-left: 5px;
+}
+
+form {
+  padding-top: 10px;
+}
+
+#recordsList {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+td.recordItem:hover {
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+
+td button.editButton, td button.deleteButton {
+  padding: 5px 30px;
+  font-size: 14px;
+}
+
+input[type='submit'] {
+  font-size: 26px;
+  text-transform: uppercase;
+}

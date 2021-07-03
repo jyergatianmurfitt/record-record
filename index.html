@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8">
+    <title>Record Record</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Your Record Record</h1>
+      <h2>A record of all your records</h2>
+      <p id="counter"></p>
+    </div>
+    <div class="input">
+    <div class="recordsTable">
+      <table>
+        <tbody id="recordsList">
+        </tbody>
+      </table>
+      <div id="edit-box" role="aria-hidden">
+        <form action="javascript:void(0);" method="POST" id="save-edit">
+          <input type="text" id="edit-record">
+          <input type="submit" value="Save" class="submitButton"/> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+        </form>
+      </div>
+      <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+        <input id="recordName" type="text" placeholder="Record Name">
+        <input id="artist" type="text" placeholder="Artist">
+        <input class="addButton" type="submit" value="Add">
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="/Users/josephinayergatian-murfitt/Documents/Atom/Record Record/index.js"></script>
+  </body>
+</html>
