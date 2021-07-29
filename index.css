@@ -6,6 +6,10 @@
    display: none;
  }
 
+ td {
+   color: white;
+ }
+
  .title {
    background-image: url(img3.jpg);
    background-size: cover;
@@ -77,7 +81,7 @@ form {
 
 td.recordItem:hover {
   border-radius: 5px;
-  background-color: lightgrey;
+  background-color: #54b2de;
 }
 
 td button.editButton, td button.deleteButton {

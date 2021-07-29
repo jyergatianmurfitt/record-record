@@ -10,7 +10,7 @@ var app = new function() {
         for(i = 0; i < this.recordsList.length; i++) {
           data += '<tr>';
           data += '<td class="recordItem">' + (i + 1) + ". " + this.recordsList[i] + '</td>';
-          data += '<td><button onclick="app.Edit(' + i + ')" class="editButton">Edit</button><button onclick="app.Delete(' + i + ')" class="deleteButton">Delete</button></td>';
+          data += '<td><button onclick="app.Edit(' + i + ')" class="editButton btn btn-warning">Edit</button><button onclick="app.Delete(' + i + ')" class="deleteButton btn btn-danger">Delete</button></td>';
           data += '</tr>';
         }
       }
@@ -67,14 +67,30 @@ var app = new function() {
     }
   };
 
+
+  searchBar = function() {
+    var searchInput = document.getElementById('searchInput').value;
+    searchInput = searchInput.toLowerCase();
+    var content = document.getElementsByClassName('recordItem');
+
+    if (searchInput.length > 0) {
+      for (i = 0; i < content.length; i++) {
+        if (!content[i].innerHTML.toLowerCase().includes(searchInput)) {
+          content[i].style.backgroundColor = '#242c34';
+        } else {
+          content[i].style.backgroundColor = '#409636';
+        }
+      }
+    } else if (searchInput.length == 0) {
+      for (j = 0; j < content.length; j++) {
+          content[j].style.backgroundColor = '#242c34';
+        };
+      };
+  };
+
+
 }
 app.FetchAll();
-
-
-
-
-
-
 
 
 
